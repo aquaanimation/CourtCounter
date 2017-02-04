@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.courtcounter.TeamAPlayers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ImageView
+    style="@style/basicBg"
+    android:contentDescription="@string/default_content_description"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/activity_team_aplayers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    >
+<EditText
+    android:id="@+id/teamAEdit"
+    android:textSize="22sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/teamA"/>
+    <EditText
+        android:id="@+id/teamBEdit"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/teamB"
+        />
+    <Button
+        android:id="@+id/save_teams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_match_btn"
+        android:onClick="saveTextClick"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_player_team_a_btn"
+        android:onClick="addEdit"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_player_team_b_btn"
+
+        />
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

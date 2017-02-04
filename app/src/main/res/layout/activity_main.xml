@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.courtcounter.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        style="@style/basicBg"
+        android:contentDescription="@string/default_content_description"/>
+<LinearLayout
+    style="@style/app_wrapper"
+    android:id="@+id/activity_main">
+    <LinearLayout
+        style="@style/teams_container"
+        >
+    <LinearLayout
+        style="@style/team_info_container">
+        <RelativeLayout
+            style="@style/logo_container"
+            android:id="@+id/logoTeamA">
+            <ImageView
+                style="@style/logo_frame"
+                android:contentDescription="@string/default_content_description"/>
+            <ImageView
+                style="@style/logo"
+                android:contentDescription="@string/default_content_description"/>
+        </RelativeLayout>
+        <TextView
+            style="@style/teamName"
+            android:id="@+id/teamAName"
+            android:text="@string/teamA"/>
+        <TextView
+            style="@style/score"
+            android:id="@+id/team_a_score"
+            android:text="@string/default_score" />
+        <ScrollView
+            style="@style/players_container">
+            <LinearLayout
+                style="@style/player_container"
+                android:id="@+id/player"/>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            style="@style/team_info_container">
+            <RelativeLayout
+                style="@style/logo_container"
+                android:id="@+id/logoTeamB" >
+                <ImageView
+                    style="@style/logo_frame"
+                    android:contentDescription="@string/default_content_description"/>
+                <ImageView
+                    style="@style/logo"
+                    android:src="@drawable/olympiakos_bc"
+                    android:contentDescription="@string/default_content_description"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/teamBName"
+                style="@style/teamName"
+                android:text="@string/teamB"/>
+            <TextView
+                style="@style/score"
+                android:id="@+id/team_b_score"
+                android:text="@string/default_score" />
+            <ScrollView
+                style="@style/players_container">
+                <LinearLayout
+                    style="@style/player_container"
+                    android:id="@+id/player2"/>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <Button
+        style="@style/reset_button"
+        android:id="@+id/reset_points"
+        android:text="@string/res_score"
+        android:onClick="resetTeamPoints"
+        />
+    <Button
+        style="@style/undo_button"
+        android:id="@+id/undo"
+        android:text="@string/undo_text"
+        android:onClick="undoLastAction"
+        />
+    <Button
+        style="@style/dev_button"
+        android:text="@string/dev_text"
+        android:onClick="editTextClick"
+        />
+</RelativeLayout>
+
+</LinearLayout>
+    <TextView
+        style="@style/counter"
+        android:id="@+id/countDown"/>
+</RelativeLayout>

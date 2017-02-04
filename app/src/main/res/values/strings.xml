@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+    <!-- Generic Strings  -->
+    <string name="teamA">Panathinaikos</string>
+    <string name="teamB">Olympiakos</string>
+    <string name="default_score">0</string>
+    <string name="undo_text">undo</string>
+    <string name="res_score">reset</string>
+    <string name="dev_text">dev</string>
+    <string name="default_content_description">Generic Image</string>
+
+    <!-- Players from Team A  -->
+    <string name="player0">0</string>
+    <string name="player1">2</string>
+    <string name="player2">3</string>
+    <string name="player3">9</string>
+    <string name="player4">7</string>
+    <string name="player_name0">Chris Singleton</string>
+    <string name="player_name1">Demetris Nichols</string>
+    <string name="player_name2">KC Rivers</string>
+    <string name="player_name3">Antonis Fotsis</string>
+    <string name="player_name4">Lefteris Bochoridis</string>
+    <!-- Players from Team B  -->
+    <string name="playerB0">1</string>
+    <string name="playerB1">2</string>
+    <string name="playerB2">3</string>
+    <string name="playerB3">7</string>
+    <string name="playerB4">5</string>
+    <string name="player_nameB0">Erick Green</string>
+    <string name="player_nameB1">Khem Birch</string>
+    <string name="player_nameB2">Patric Young</string>
+    <string name="player_nameB3">Vassilis Spanoulis</string>
+    <string name="player_nameB4">Ioannis Papapetrou</string>
+
+
+    <!-- DEV VIEW  -->
+    <string name="quick_match_btn">Quick Match</string>
+    <string name="new_player_team_a_btn">New player for team A</string>
+    <string name="new_player_team_b_btn">New player for team B</string>
+
+
+</resources>
